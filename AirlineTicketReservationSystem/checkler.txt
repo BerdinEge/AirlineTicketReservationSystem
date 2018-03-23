@@ -1,0 +1,8 @@
+ALTER TABLE fare
+ADD CHECK (Amount>0);
+
+alter table airplane_type
+add check (Max_seats>0);
+
+alter table seat_reservation
+add check (Seat_number>0);
